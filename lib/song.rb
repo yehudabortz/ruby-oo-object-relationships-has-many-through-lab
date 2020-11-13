@@ -8,7 +8,6 @@ class Song
         @name = name
         @artist = artist
         @genre = genre
-
         @@all << self
     end
 
@@ -16,4 +15,26 @@ class Song
         @@all
     end
 
+
+
 end
+
+# class Song
+#     attr_reader :artist, :genre
+#     attr_accessor :name
+  
+#     @@all = []
+  
+#     def initialize(name, artist, genre)
+#       @name = name
+#       @artist = artist
+#       @genre = genre
+#       @@all << self
+#     end
+  
+#     def self.all
+#       @@all
+#     end
+  
+
+#   end
