@@ -12,6 +12,6 @@ class Artist
     end
 
     def songs
-        Song.all.select {|song| song.include?(self)}
+        Song.all.select {|song| song.artist.include?(self)}
     end
 end
